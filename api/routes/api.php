@@ -20,16 +20,16 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 
 // User Registration
-Route::post('/register', 'App\Http\Controllers\AuthController@register');
+Route::post('/register', 'AuthController@register');
 
 // User Login
-Route::post('/login', 'App\Http\Controllers\AuthController@login');
+Route::post('/login', 'AuthController@login');
 
 // User Logout
-Route::post('/logout', 'App\Http\Controllers\AuthController@logout');
+Route::post('/logout', 'AuthController@logout');
 
 // Score Insertion
-Route::post('/scores', 'App\Http\Controllers\ScoreController@store');
+Route::post('/scores', 'ScoreController@store');
 
 // Top 10 Users with Highest Scores
-Route::get('/ranks', 'App\Http\Controllers\ScoreController@topScores');
+Route::get('/ranks', 'ScoreController@topScores');
