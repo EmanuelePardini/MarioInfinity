@@ -1,0 +1,136 @@
+.obstacles-container {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.obstacle1, .obstacle2, .obstacle3 {
+    height: 60px;
+    width: auto;
+    position: absolute;
+    bottom: 120px;
+}
+
+.obstacle1 {
+    left: 120vw;
+}
+.obstacle2 {
+    left: 240vw;
+}
+.obstacle3 {
+    left: 180vw;
+    bottom: 160px;
+}
+
+.obstacle1-move {
+    animation-name: obstacle1-animation;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.obstacle2-move {
+    animation-name: obstacle2-animation;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.obstacle3-move {
+    animation-name: obstacle3-animation;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes obstacle1-animation {
+    0% {
+        left: 125vw;
+    }
+    100% {
+        left: -120vw;
+    }
+}
+
+@keyframes obstacle2-animation {
+    0% {
+        left: 240vw;
+    }
+    100% {
+        left: -240vw;
+    }
+    
+}
+
+@keyframes obstacle3-animation {
+    0% {
+        left: 125vw;
+    }
+    100% {
+        left: -120vw;
+    }
+    
+}
+
+/* Media Queries */
+@media (min-width:1280px) and (min-width: 2560px) {
+    .obstacle1, .obstacle2 {
+        height: 75px;
+        bottom: 170px;
+    }
+    .obstacle3 {
+        height: 150px;
+        bottom: 260px;
+    }
+}
+
+@media (min-width:1280px) and (max-width: 1920px) {
+    .obstacle1, .obstacle2 {
+        height: 50px;
+        bottom: 120px;
+    }
+     .obstacle3 {
+        height: 100px;
+        bottom: 240px;
+    }
+    
+}
+
+@media (min-width:1024px) and (max-width: 1280px) {
+    .obstacle1, .obstacle2  {
+        height: 50px;
+        bottom: 100px;
+    }
+     .obstacle3 {
+        height: 100px;
+        bottom: 140px;
+    }
+    
+}
+
+@media (min-width:640px) and (max-width: 1024px) {
+    .obstacle1, .obstacle2  {
+        height: 40px;
+        bottom: 60px;
+    }
+    .obstacle3 {
+        height: 80px;
+        bottom: 120px;
+    }
+}
+
+@media (max-width: 640px) {
+    .obstacle1, .obstacle2 {
+        height: 30px;
+        bottom: 60px;
+    }
+    .obstacle3 {
+        height: 60px;
+        bottom: 110px;
+    }
+    
+}
+

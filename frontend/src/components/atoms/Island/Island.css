@@ -1,0 +1,40 @@
+.island {
+    background-image: url("../../../assets/img/gif/island.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 120px;
+    width: 100%;
+    position: absolute;
+    top: 20px;
+    left: 100vw;
+}
+
+.island-animate {
+    animation-name: island-animation;
+    animation-duration: 60s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes island-animation {
+    0% {
+        left: 100vw;
+    }
+    100% {
+        left: -15vw;
+    }
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .island {
+        height: 100px;
+    }
+}
+
+@media (max-width: 640px) {
+    .island {
+        height: 80px;
+        top: 25px;
+    }
+}

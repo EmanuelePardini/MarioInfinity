@@ -1,0 +1,26 @@
+.footer {
+    background-color: red;
+    width: 100%;
+    font-size: 0.75rem;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    position: fixed;
+    bottom: 0px;
+    color: #EEE;
+    z-index: 100;
+    padding: 10px;
+}
+
+.footer-link {
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-decoration: none;
+    margin:10%;
+    text-shadow:
+    -2px -2px 0 #000, 
+    2px -2px 0 #000, 
+    -2px 2px 0 #000, 
+    2px 2px 0 #000; 
+}
+

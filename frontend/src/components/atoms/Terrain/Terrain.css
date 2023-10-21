@@ -1,0 +1,49 @@
+.Terrain {
+    background-image: url("../../../assets/img/Terrain.jpg");
+    background-repeat: repeat-x;
+    background-size: contain;
+    height: 120px;
+    width: 1000vw;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+.Terrain-animate {
+    animation-name: Terrain;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes Terrain {
+    0% {
+        left: 0px;
+    }
+    100% {
+        left: -1200px
+    }
+}
+
+/* Media Queries */
+@media (min-width: 2560px) {
+    .Terrain {
+        height: 170px;
+    }
+}
+@media (max-width: 1280px) {
+    .Terrain {
+        height: 100px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .Terrain {
+        height: 60px;
+    }
+}
+
+
+
+
+
